@@ -1,15 +1,20 @@
 # OS-EX.6-IMPLEMENTATION-OF-INTER-PROCESS-COMMUNICATION-USING-PIPE
 
-AIM:
+## AIM:
 To implement interprocess communication using pipe command.
 
-ALGORITHM:
+## ALGORITHM:
   1.Start
+  
   2.Create a child and parent using fork()
+  
   3.Allow communication between both the process
+  
   4.Stop
 
-PROGRAM:
+## PROGRAM:
+
+
 ```
 #include <stdio.h>
 #include <unistd.h> // Include this header for fork() and pipe()
@@ -38,6 +43,10 @@ int main()
     return 0;
 }
 ```
+
+### INTERPROCESS COMMUNICATION SHARED MEMORY:
+
+
 ```                              
 #include <sys/types.h>
 #include <sys/ipc.h>
@@ -96,13 +105,14 @@ int main(void)
 
 
 
-OUTPUT:
+## OUTPUT:
 
 
 ![image](https://github.com/praveenst13/OS-EX.6-IMPLEMENTATION-OF-INTER-PROCESS-COMMUNICATION-USING-PIPE/assets/118787793/6fa64417-1a81-4ca0-bd5c-ef537041d9be)
+### INTERPROCESS COMMUNICATION SHARED MEMORY:
 ![image](https://github.com/praveenst13/OS-EX.6-IMPLEMENTATION-OF-INTER-PROCESS-COMMUNICATION-USING-PIPE/assets/118787793/a82a7170-051c-4246-95e9-1efd15227406)
 
 
 
 
-RESULT:
+## RESULT:
